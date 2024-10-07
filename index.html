@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- fontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>portfolio</title>
+</head>
+<body>
+
+    <main>
+        <!--Navbar-->
+        <nav class="nav">
+            <div class="logo">
+                <h3>Rajeshwaran</h3>
+            </div>
+
+            <ul class="nav-list" id="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projest">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="menu" id="menu">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <!--Home-->
+        <div class="home" id="home">
+            <div class="home-img">
+                <img src="./images/home.png" alt="image">
+            </div>
+
+            <div class="home-content">
+                <h1>Hi,Im <br/>Rajeshwaran G</h1>
+                <h3>Im a Frontend Developer</h3>
+            </div>
+        </div>
+         <!--about-->
+         <div class="about" id="about">
+            <div class="about-content">
+                <h1>About</h1>
+                <p>Hi My name is Rajeshwaran G .I am a highly motivated Front End Developer with a passion for creating user-friendly websites and applications. I specialise in HTML5, CSS3, JavaScript, React ,Tailwind css.</p>
+                <p> I have a proven ability to collaborate effectively with both technical and non-technical teams, and am always looking for ways to improve my knowledge and skills.</p>    
+                <p>Am looking forward to prove my excellence with the dynamically growing company who appreciates quality.</p>
+            </div>
+            <div class="about-img">
+                <img src="./images/about (1).png" alt="">
+            </div>
+            </div>
+            <!-- projest -->
+             <div class="projests" id="projest">
+                <h1>Projects</h1>
+                <div class="project-container">
+
+                    <div class="project">
+                        <img src="./images/project1.png" alt="project image" class="project-img">
+                        <p><a href="https://github.com/rajeshwaran24/rock-paper-scissors">View code</a></p>
+                    </div>
+
+                    <div class="project">
+                        <img src="./images/projest2.png" alt="project image" class="project-img">
+                        <p><a href="https://github.com/rajeshwaran24/product-filter">View code</a></p>
+                    </div>
+
+                    <div class="project">
+                        <img src="./images/project3.png" alt="project image" class="project-img">
+                        <p><a href="https://github.com/rajeshwaran24/react-crud">View code</a></p>
+                    </div>
+
+                    
+                </div>
+
+                <p class="project-github-link"><a href="#">Github Link to view other Project</a></p>
+             </div>
+             <!-- contact -->
+              <div class="contact" id="contact">
+                <h1>Contact</h1>
+                <form id="form">
+                    <div class="form">
+            
+                        <div class="form-left">
+                            <div class="input-left">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="input-left">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="input-left">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                        </div>
+            
+                        <div class="form-right">
+                            <div class="input-right">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                        </div>
+            
+                    </div>
+                    <div class="button">
+                        <button type="button" onclick="sendMail()">Submit</button>
+                    </div>
+                    
+                </form>   
+              </div>
+              <!-- fotter -->
+              <div class="fotter">
+                <p>&copy;Rajeshwaran .All rights reservice</p>
+            </div>
+    </main>
+
+    <!-- Emailjs-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "KnhloJI6opDYHc5hU",
+        });
+        })();
+    </script>
+
+    <script src="./SCRIPT/script.js"></script>
+</body>
+</html>
